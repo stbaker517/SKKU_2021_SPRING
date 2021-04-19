@@ -1,0 +1,70 @@
+inst 0: 3c1d8000 lui $29, -32768
+inst 1: 23bdfff0 addi $29, $29, -16
+inst 2: 0c100034 jal 1048628
+inst 3: 00000000 sll $0, $0, 0
+inst 4: 1000ffff beq $0, $0, -1
+inst 5: 00000000 sll $0, $0, 0
+inst 6: 27bdffe0 addiu $29, $29, -32
+inst 7: afbf001c sw $31, 28($29)
+inst 8: afbe0018 sw $30, 24($29)
+inst 9: afb00014 sw $16, 20($29)
+inst 10: 03a0f025 or $30, $29, $0
+inst 11: afc40020 sw $4, 32($30)
+inst 12: 00a01025 or $2, $5, $0
+inst 13: a3c20024 sb $2, 36($30)
+inst 14: 8fc20020 lw $2, 32($30)
+inst 15: 00000000 sll $0, $0, 0
+inst 16: 28420002 slti $2, $2, 2
+inst 17: 1440000f bne $2, $0, 15
+inst 18: 00000000 sll $0, $0, 0
+inst 19: 83d00024 lb $16, 36($30)
+inst 20: 8fc20020 lw $2, 32($30)
+inst 21: 00000000 sll $0, $0, 0
+inst 22: 2442ffff addiu $2, $2, -1
+inst 23: 83c30024 lb $3, 36($30)
+inst 24: 00000000 sll $0, $0, 0
+inst 25: 00602825 or $5, $3, $0
+inst 26: 00402025 or $4, $2, $0
+inst 27: 0c100006 jal 1048582
+inst 28: 00000000 sll $0, $0, 0
+inst 29: 02020018 mult $16, $2
+inst 30: 00001012 mflo $2
+inst 31: 10000002 beq $0, $0, 2
+inst 32: 00000000 sll $0, $0, 0
+inst 33: 83c20024 lb $2, 36($30)
+inst 34: 03c0e825 or $29, $30, $0
+inst 35: 8fbf001c lw $31, 28($29)
+inst 36: 8fbe0018 lw $30, 24($29)
+inst 37: 8fb00014 lw $16, 20($29)
+inst 38: 27bd0020 addiu $29, $29, 32
+inst 39: 03e00008 jr $31
+inst 40: 00000000 sll $0, $0, 0
+inst 41: 27bdfff8 addiu $29, $29, -8
+inst 42: afbe0004 sw $30, 4($29)
+inst 43: 03a0f025 or $30, $29, $0
+inst 44: afc40008 sw $4, 8($30)
+inst 45: 0000000c syscall
+inst 46: 00000000 sll $0, $0, 0
+inst 47: 03c0e825 or $29, $30, $0
+inst 48: 8fbe0004 lw $30, 4($29)
+inst 49: 27bd0008 addiu $29, $29, 8
+inst 50: 03e00008 jr $31
+inst 51: 00000000 sll $0, $0, 0
+inst 52: 27bdffe8 addiu $29, $29, -24
+inst 53: afbf0014 sw $31, 20($29)
+inst 54: afbe0010 sw $30, 16($29)
+inst 55: 03a0f025 or $30, $29, $0
+inst 56: 3c021001 lui $2, 4097
+inst 57: 24440000 addiu $4, $2, 0
+inst 58: 0c100029 jal 1048617
+inst 59: 00000000 sll $0, $0, 0
+inst 60: 24050014 addiu $5, $0, 20
+inst 61: 2404000a addiu $4, $0, 10
+inst 62: 0c100006 jal 1048582
+inst 63: 00000000 sll $0, $0, 0
+inst 64: 03c0e825 or $29, $30, $0
+inst 65: 8fbf0014 lw $31, 20($29)
+inst 66: 8fbe0010 lw $30, 16($29)
+inst 67: 27bd0018 addiu $29, $29, 24
+inst 68: 03e00008 jr $31
+inst 69: 00000000 sll $0, $0, 0

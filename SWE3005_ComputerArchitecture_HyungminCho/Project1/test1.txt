@@ -1,0 +1,10 @@
+inst 0: 00220020 add $0, $1, $2
+inst 1: 8d420020 lw $2, 32($10)
+inst 2: 22300008 addi $16, $17, 8
+inst 3: 14400004 bne $2, $0, 4
+inst 4: 00000000 sll $0, $0, 0
+inst 5: 03e00008 jr $31
+inst 6: 00000000 sll $0, $0, 0
+inst 7: a7c40008 sh $4, 8($30)
+inst 8: 00135940 sll $11, $19, 5
+inst 9: 0000000d unknown instruction

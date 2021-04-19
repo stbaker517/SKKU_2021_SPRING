@@ -1,0 +1,54 @@
+inst 0: 3c1d8000 lui $29, -32768
+inst 1: 23bdfff0 addi $29, $29, -16
+inst 2: 0c100006 jal 1048582
+inst 3: 00000000 sll $0, $0, 0
+inst 4: 1000ffff beq $0, $0, -1
+inst 5: 00000000 sll $0, $0, 0
+inst 6: 27bdffe0 addiu $29, $29, -32
+inst 7: afbf001c sw $31, 28($29)
+inst 8: afb00014 sw $16, 20($29)
+inst 9: 03a0f025 or $30, $29, $0
+inst 10: a3c20024 sb $2, 36($30)
+inst 11: 8fc20020 lw $2, 32($30)
+inst 12: 00000000 sll $0, $0, 0
+inst 13: 28420002 slti $2, $2, 2
+inst 14: 14400007 bne $2, $0, 7
+inst 15: 00000000 sll $0, $0, 0
+inst 16: 83d00024 lb $16, 36($30)
+inst 17: 8fc20020 lw $2, 32($30)
+inst 18: 0c100019 jal 1048601
+inst 19: 00000000 sll $0, $0, 0
+inst 20: 02020018 mult $16, $2
+inst 21: 00001012 mflo $2
+inst 22: 0000000c syscall
+inst 23: 03c0e825 or $29, $30, $0
+inst 24: 8fbe0004 lw $30, 4($29)
+inst 25: 27bd0008 addiu $29, $29, 8
+inst 26: 03e00008 jr $31
+inst 27: 00000000 sll $0, $0, 0
+inst 28: 24050014 addiu $5, $0, 20
+inst 29: 2404000a addiu $4, $0, 10
+inst 30: 03e00008 jr $31
+inst 31: 00000000 sll $0, $0, 0
+inst 32: 00021080 sll $2, $2, 2
+inst 33: 1040fff8 beq $2, $0, -8
+inst 34: 00000000 sll $0, $0, 0
+inst 35: 8fc20014 lw $2, 20($30)
+inst 36: 00000000 sll $0, $0, 0
+inst 37: 00621023 subu $2, $3, $2
+inst 38: 2442ffff addiu $2, $2, -1
+inst 39: 01b30020 add $0, $13, $19
+inst 40: 02600011 mthi $19
+inst 41: 15200002 bne $9, $0, 2
+inst 42: 0109001a div $8, $9
+inst 43: 0007000d unknown instruction
+inst 44: 2401ffff addiu $1, $0, -1
+inst 45: 15210004 bne $9, $1, 4
+inst 46: 3c018000 lui $1, -32768
+inst 47: 15010002 bne $8, $1, 2
+inst 48: 00000000 sll $0, $0, 0
+inst 49: 0006000d unknown instruction
+inst 50: 00004012 mflo $8
+inst 51: 0280f809 jalr $31, $20
+inst 52: 00000000 sll $0, $0, 0
+inst 53: 018b5007 srav $10, $11, $12

@@ -1,0 +1,6 @@
+2 case_num1 
+43 i -> int 2 sfp 1
+15  -> int 2 sfp 1
+2 case_num 3
+0.34375 -> float 2 sfp
+-2.25 -> float 2 sfp
