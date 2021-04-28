@@ -14,8 +14,10 @@ Data Inst_20to16;
 Data Inst_15to11;
 Data Inst_15to00;
 Data Inst_05to00;
-
 Data Inst_25to00;
+
+Data isZero;
+Data ALUResult;
 
 unsigned int RegDst;
 unsigned int ALUSrc;
@@ -43,7 +45,7 @@ Shift instructions: sll , srl
 void ControlUnit(unsigned int OPcode);
 void Registers(Data RegWrite, Data ReadRegister1, Data ReadRegister2, Data WriteRegister, Data WriteData);
 void fetchInstruction(Data Inst);
-
+void ALU(Data Se_Inst15to00);
 
 int main() {
 	
@@ -122,4 +124,15 @@ void fetchInstruction(Data Inst)
 	Inst_25to00 = Inst & 0b11111111111111111111111111;
 
 
+}
+
+void ALU(Data Se_Inst15to00)
+{
+	Data input1,input2;
+	input1=ReadData1;
+	input2=ALUSrc?Se_Inst15to00:ReadData2;
+
+	//다양한 작업
+	//
+	
 }
