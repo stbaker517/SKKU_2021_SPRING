@@ -152,7 +152,7 @@ void encodeMipsInst(unsigned int Bin_Inst)
     else if (op == 0b001100)
     {//finalcheck
       printf("andi $%d, $%d, %d\n", rt, rs, const_addr_16);
-    }
+    }vi 
     else if (op == 0b001101)
     {//finalcheck
       printf("ori $%d, $%d, %d\n", rt, rs, const_addr_16);
